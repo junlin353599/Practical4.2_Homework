@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <CheckBox
+        android:id="@+id/chocolate_syrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chocolate_syrup"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onCheckBoxClicked"
+        android:layout_marginLeft="20dp" />
+
+    <CheckBox
+        android:id="@+id/sprinkles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sprinkles"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chocolate_syrup"
+        android:onClick="onCheckBoxClicked"
+        android:layout_marginLeft="20dp" />
+
+    <CheckBox
+        android:id="@+id/crushed_nuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crushed_nuts"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sprinkles"
+        android:onClick="onCheckBoxClicked"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/cherries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cherries"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crushed_nuts"
+        android:onClick="onCheckBoxClicked"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/orio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orio"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cherries"
+        android:onClick="onCheckBoxClicked"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/show_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_toast"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orio"
+        android:layout_marginLeft="20dp" />
+</LinearLayout>
